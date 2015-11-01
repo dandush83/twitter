@@ -45,3 +45,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #add to make work on windows
 
 gem 'coffee-script-source', '1.8.0'
+
+gem 'simple_form'
