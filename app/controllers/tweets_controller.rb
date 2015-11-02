@@ -9,6 +9,7 @@ class TweetsController < ApplicationController
 		puts "the params are" + params['tweet']['content']
 		@tweet = Tweet.new(tweet_params)
 		@tweet.save
+		redirect_to root_path
 	end
 
 	def tweet_params

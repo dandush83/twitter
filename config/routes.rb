@@ -56,8 +56,8 @@ Rails.application.routes.draw do
 
   root 'tweets#new'
 
-  
 
-  resources 'tweets'
+
+  resources 'tweets', only: [:new, :create]
 
 end
