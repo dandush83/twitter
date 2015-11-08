@@ -11,6 +11,7 @@ class TweetsController < ApplicationController
 		puts "the params are" + params['tweet']['content']
 		@tweet = Tweet.new(tweet_params)
 		@tweet.save
+		flash[:success] = "You have created a tweet"
 		redirect_to root_path
 	end
 
